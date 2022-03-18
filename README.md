@@ -14,7 +14,7 @@
 <br/>
 ![Top 10 Totales](/static/img/top_10_totales.png) <br/>
 <br/>
-![Top 5 del 2018](/static/img/top_5_del_2018.png) <br/>
+![Top 5 del 2018](/static/img/top_5_2018.png) <br/>
 <br/>
 ![Totales Baras Horizontales](/static/img/totales_horizontal_bars.png) <br/>
 <br/>
