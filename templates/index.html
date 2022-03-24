@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Graphics of Femenicidios en Peru
+{% endblock %}
+
+{% block content %}
+
+<!-- ChartJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"></script>
+<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+</style>
+
+<h1 class="text-center">Femenicidios en el Peru </h1>
+<h3 class="text-center">de 2015 a 2019</h3>
+<hr>
+<h4>Totales de Femenicidios</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%;">
+			<canvas id="totales_horizontal_bars" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+<hr>
+<h4>Pie Totales</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%:">
+			<canvas id="pie_totales" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+<hr>
+<h4>Totales line</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%:">
+			<canvas id="totales_line" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+<hr>
+<h4>Top 5 de 2018</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%:">
+			<canvas id="top_5_de_2018" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+<hr>
+<h4>Top 10 del 2015 a 2019</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%:">
+			<canvas id="top_10_totales" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+<hr>
+<h4>Cusco y La libertad comparacion 2015 a 2019</h4>
+<div class="row">
+	<div class="w-100 mx-auto">
+		<div style="width: 100%:">
+			<canvas id="cusco_la_libertad_line" width:"400" height:"200"></canvas>
+		</div>
+	</div>
+</div>
+
+<!-- Here is scrips-->
+
+<script>
+	var LABELS = [{% for label in totales['labels'] %} "{{ label }}", {% endfor %}]
+	var DATA = [{% for value in totales['values'] %} {{ value }}, {% endfor %}]
+
+	var ctx = document.getElementById("totales_horizontal_bars").getContext("2d");
+	var totales_horizontal_bars = new Chart(ctx,{
+		type: 'bar',
+		data:{ 
+			labels: LABELS,
+			datasets: [{
+				label: 'Numero de Femenicidios reportados',
+				data: DATA 		
+			},]
+		},
+		options: { 
+			scales: {
+				yAxes: [{
+					ticks:{
+					beginAtZero: true
+					}
+				}]
+			}}
+		
+	});
+</script>
+
+
+{% endblock %}
