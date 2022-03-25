@@ -1,29 +1,29 @@
-,"VÍCTIMAS DE FEMINICIDIO, SEGÚN DEPARTAMENTO, 2015 - 2019",Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
-2,Departamento ,"Total
-2015 - 2019",2015.0,2016.0,2017,2018,2019.0
-4,Total,619,84.0,106.0,131,150,148.0
-6,Amazonas,10,1.0,1.0,2,4,2.0
-7,Áncash,11,1.0,3.0,4,2,1.0
-8,Apurímac,12,0.0,4.0,2,2,4.0
-9,Arequipa,34,5.0,6.0,9,8,6.0
-10,Ayacucho,22,2.0,3.0,6,9,2.0
-11,Cajamarca,17,2.0,5.0,5,-,5.0
-12,Prov. Const. del Callao,13,3.0,1.0,1,2,6.0
-13,Cusco,40,3.0,4.0,10,13,10.0
-14,Huancavelica,13,1.0,4.0,3,2,3.0
-15,Huánuco,32,3.0,7.0,5,12,5.0
-16,Ica,11,3.0,1.0,1,3,3.0
-17,Junín,34,7.0,4.0,6,10,7.0
-18,La Libertad,37,1.0,5.0,4,14,13.0
-19,Lambayeque,13,0.0,0.0,7,4,2.0
-20,Lima Metropolitana 1/,163,31.0,34.0,30,32,36.0
-21,Lima 2/,30,5.0,4.0,6,6,9.0
-22,Loreto,13,0.0,1.0,2,4,6.0
-23,Madre de Dios,10,1.0,2.0,2,4,1.0
-24,Moquegua,6,1.0,1.0,1,1,2.0
-25,Pasco,7,1.0,1.0,4,-,1.0
-26,Piura,17,2.0,3.0,5,3,4.0
-27,Puno,30,3.0,1.0,8,10,8.0
-28,San Martín,17,2.0,2.0,6,1,6.0
-29,Tacna,13,2.0,4.0,0,4,3.0
-30,Tumbes,6,0.0,3.0,2,-,1.0
+"VÍCTIMAS DE FEMINICIDIO, SEGÚN DEPARTAMENTO, 2015 - 2019",Unnamed: 0,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+Departamento ,0,"Total
+2015 - 2019",2015,2016,2017,2018,2019
+Total,1,619,84,106,131,150,148
+Amazonas,2,10,1,1,2,4,2
+Áncash,3,11,1,3,4,2,1
+Apurímac,4,12,0,4,2,2,4
+Arequipa,5,34,5,6,9,8,6
+Ayacucho,6,22,2,3,6,9,2
+Cajamarca,7,17,2,5,5,0,5
+Prov. Const. del Callao,8,13,3,1,1,2,6
+Cusco,9,40,3,4,10,13,10
+Huancavelica,10,13,1,4,3,2,3
+Huánuco,11,32,3,7,5,12,5
+Ica,12,11,3,1,1,3,3
+Junín,13,34,7,4,6,10,7
+La Libertad,14,37,1,5,4,14,13
+Lambayeque,15,13,0,0,7,4,2
+Lima Metropolitana 1/,16,163,31,34,30,32,36
+Lima 2/,17,30,5,4,6,6,9
+Loreto,18,13,0,1,2,4,6
+Madre de Dios,19,10,1,2,2,4,1
+Moquegua,20,6,1,1,1,1,2
+Pasco,21,7,1,1,4,0,1
+Piura,22,17,2,3,5,3,4
+Puno,23,30,3,1,8,10,8
+San Martín,24,17,2,2,6,1,6
+Tacna,25,13,2,4,0,4,3
+Tumbes,26,6,0,3,2,0,1
