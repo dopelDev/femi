@@ -6,6 +6,8 @@
 
 ## Web deployment <br/>
 
+https://secure-mountain-95918.herokuapp.com/
+
 ## Graph visualization using Matplotlib <br/>
 
 ![Casos en Cusco y La Libertad](/static/img/cusco_la_libertad.png) <br/>
