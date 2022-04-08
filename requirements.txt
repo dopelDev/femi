@@ -3,6 +3,7 @@ cycler==0.11.0
 et-xmlfile==1.1.0
 Flask==2.0.3
 fonttools==4.30.0
+gunicorn==20.1.0
 itsdangerous==2.1.1
 Jinja2==3.0.3
 kiwisolver==1.4.0
