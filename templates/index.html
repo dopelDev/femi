@@ -131,6 +131,71 @@ var DATA_LINE = [{% for value in totales_line['values'] %} {{ value }}, {% endfo
 		
 	});
 
+<!-- top 5 2018 -->
+
+var LABELS_TOP_5_2018 = [{% for label in top_5_2018['labels'] %} "{{ label }}", {% endfor %}]
+var DATA_TOP_5_2018 = [{% for value in top_5_2018['values'] %} {{ value }}, {% endfor %}]
+
+	var ctx = document.getElementById("top_5_de_2018").getContext("2d");
+	var top_5_de_2018 = new Chart(ctx,{
+		type: 'bar',
+		data:{ 
+			labels: LABELS_TOP_5_2018,
+			datasets: [{
+				label: 'Numero de Femenicidios reportados',
+				data: DATA_TOP_5_2018 		
+			},]
+		},
+		options: {
+			indexAxis: 'y',
+			}
+		
+	});
+
+<!-- top 10 totales -->
+
+var LABELS_TOP_10 = [{% for label in top_10_totales['labels'] %} "{{ label }}", {% endfor %}]
+var DATA_TOP_10 = [{% for value in top_10_totales['values'] %} {{ value }}, {% endfor %}]
+
+	var ctx = document.getElementById("top_10_totales").getContext("2d");
+	var top_10_totales = new Chart(ctx,{
+		type: 'bar',
+		data:{ 
+			labels: LABELS_TOP_10,
+			datasets: [{
+				label: 'Numero de Femenicidios reportados',
+				data: DATA_TOP_10 		
+			},]
+		},
+		options: {
+			}
+		
+	});
+
+<!-- cusco_la_libertad_line -->
+
+var LABELS_CUSCO_LA_LIBERTAD = [{% for label in cusco_la_libertad['labels'] %} "{{ label }}", {% endfor %}]
+var DATA_LIBERTAD = [{% for value in cusco_la_libertad['values']['la libertad'] %} {{ value }}, {% endfor %}]
+var DATA_CUSCO = [{% for value in cusco_la_libertad['values']['cusco'] %} {{ value }}, {% endfor %}]
+
+	var ctx = document.getElementById("cusco_la_libertad_line").getContext("2d");
+	var cusco_la_libertad_line = new Chart(ctx,{
+		type: 'line',
+		data:{ 
+			labels: LABELS_CUSCO_LA_LIBERTAD,
+			datasets: [{
+				label: 'Numero de Femenicidios reportados en la libertad',
+				data: DATA_LIBERTAD		
+			},
+			{
+				label: 'Numero de Femenicidios reportados en cusco',
+				data: DATA_CUSCO		
+			},]
+		},
+		options: {
+			}
+		
+	});
 
 </script>
 
