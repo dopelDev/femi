@@ -68,6 +68,17 @@ Graphics of Femenicidios en Peru
 
 <script>
 
+	<!-- Colors generated -->	
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
 <!-- totales_horizontal_bars -->
 
 	var LABELS = [{% for label in totales['labels'] %} "{{ label }}", {% endfor %}]
@@ -80,7 +91,10 @@ Graphics of Femenicidios en Peru
 			labels: LABELS,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados',
-				data: DATA 		
+				data: DATA,
+				backgroundColor: [getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(),
+				getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(),
+				getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor()],
 			},]
 		},
 		options: { 
@@ -103,7 +117,10 @@ Graphics of Femenicidios en Peru
 			labels: LABELS,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados',
-				data: DATA 		
+				data: DATA,
+				backgroundColor: [getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(),
+				getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(),
+				getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor()],
 			},]
 		},
 		options: { 
@@ -123,7 +140,10 @@ var DATA_LINE = [{% for value in totales_line['values'] %} {{ value }}, {% endfo
 			labels: LABELS_DATA_LINE,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados',
-				data: DATA_LINE 		
+				data: DATA_LINE,
+				backgroundColor: getRandomColor(),
+				borderColor: getRandomColor(),
+				color: getRandomColor(),
 			},]
 		},
 		options: { 
@@ -143,7 +163,8 @@ var DATA_TOP_5_2018 = [{% for value in top_5_2018['values'] %} {{ value }}, {% e
 			labels: LABELS_TOP_5_2018,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados',
-				data: DATA_TOP_5_2018 		
+				data: DATA_TOP_5_2018,
+				backgroundColor: [getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(),]
 			},]
 		},
 		options: {
@@ -164,7 +185,8 @@ var DATA_TOP_10 = [{% for value in top_10_totales['values'] %} {{ value }}, {% e
 			labels: LABELS_TOP_10,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados',
-				data: DATA_TOP_10 		
+				data: DATA_TOP_10,
+				backgroundColor: [getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor(), getRandomColor()]
 			},]
 		},
 		options: {
@@ -185,11 +207,15 @@ var DATA_CUSCO = [{% for value in cusco_la_libertad['values']['cusco'] %} {{ val
 			labels: LABELS_CUSCO_LA_LIBERTAD,
 			datasets: [{
 				label: 'Numero de Femenicidios reportados en la libertad',
-				data: DATA_LIBERTAD		
+				data: DATA_LIBERTAD,
+				backgroundColor: getRandomColor(),
+				borderColor: getRandomColor(),
 			},
 			{
 				label: 'Numero de Femenicidios reportados en cusco',
-				data: DATA_CUSCO		
+				data: DATA_CUSCO,
+				backgroundColor: getRandomColor(),
+				borderColor: getRandomColor(),
 			},]
 		},
 		options: {
