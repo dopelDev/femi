@@ -6,7 +6,6 @@ fonttools==4.30.0
 gunicorn==20.1.0
 itsdangerous==2.1.1
 Jinja2==3.0.3
-kiwisolver==1.4.0
 MarkupSafe==2.1.1
 matplotlib==3.5.1
 numpy==1.22.3
